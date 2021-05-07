@@ -1,3 +1,36 @@
 // Bootstrap
 @import "vendor/bootstrap/scss/bootstrap.scss";
 
+
+// cta-group for general control
+.cta-group {
+  margin: 1em 0;
+  text-align: center;
+  @extend .row;
+
+  .cta-title {
+    @extend .col-sm-12, .col-md-12, .col-lg-6, .align-items-center, .justify-content-center, .d-flex;
+    p {
+      margin: 0;
+    }
+  }
+}
+
+// Reusable class for buttons that we want uses to click on to share or 'link' to another potential user.
+.cta-primary {
+  @extend .btn, .btn-lg, .btn-primary, .disabled, .col-sm-12, .col-md-3, .col-lg-3;
+  margin: .5em;
+}
+
+// Reusable class to indicate if a button toggles a mode. E.G.: Preview, Edit
+.cta-mode {
+  @extend .btn, .btn-lg, .btn-outline-primary, .disabled, .col-sm-12, .col-md-3, .col-lg-3;
+  margin: .5em;
+}
+
+// Container for actionable items in cta-group
+.cta-options {
+  @extend .flex-sm-row, .justify-content-center, .col-lg-6;
+}
+
+
